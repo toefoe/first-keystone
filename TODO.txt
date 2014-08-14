@@ -1,0 +1,52 @@
+project opstarten
+-------------------
+1. open cmd in administor mode
+2. start mongodb C:\mongodb\bin>mongod.exe -dbpath c:\Joa\projectnode\first-keystone\data
+3. open cmd in administor mode
+4. start keystone project: C:\Joa\projectnode\first-keystone>node keystone
+
+FRONTEND:
+-form structuur
+- validatie (warnings , veld warnings)
+- zorg voor een list structuur
+- zorg voor een pagina structuur
+- zorg voor een navigatie structuur
+- angular controller voor froms en validatie (plaats voor custom code)
+- angular load technieken lazy loading, loading
+- angular ajax navigatie, ect,...
+- css controleren op verschillende scherm resoluties
+
+indeling frontend:
+--------------------
+
+
+BACKEND:
+- vind uit hoe het juiste jade bestand wordt gevonden om een field type te renderen in admin
+  --> field.js
+- maak via een gelijkaardig systeem een vieuw configuratie aan voor het datamodel van een (biz) service dat gebruikt wordt als vieuwmodel
+- rechtensysteem
+  - roles
+  - rechten:
+      - navigatie structuren(jade)(security)
+      - database documents (zie of we hier mongo db voor kunnen gebruiken)(onderdeel van buisness rules op db niveau)
+      - renderen van een pagina (jade)
+      - renderen visibiliteit van blokken, velden via rechten(jade)
+- buisness service laag
+- buiseness rules onafhankelijk van service laag
+- workflows, tasks
+- plat renderen voor search robots
+- use standard form voor templates
+
+FUNCTIONALITEITEN
+------------------
+1. Een document type aanmaken (tabel) en eigenschappen defineren (fields) via GUI
+2. Een form builder maken , binding kunnen instellen , hooks voor code (events), fieldtype (control) instellen
+3. Een package structuur voorzien die die de gegevens tussen client en server voorzien
+4. plaats voor frontend code voor forms
+5. plaats voor backend code (calls)
+6. application layers frontend -> navigation, pages, forms , controller, service , document types, field control defenitions
+
+PRACTISCH
+----------
+1. frontend voor application layers genereerd code (jade, js,..), sommige instelling kunnen een db document krijgen maar dit wordt liefst vermeden
+2. we kunnen yo gebruiken als generator
